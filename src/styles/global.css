@@ -141,18 +141,34 @@ html {
   animation: glow 2s ease-in-out infinite;
 }
 
-/* Gradientes personalizados */
+/* Gradientes personalizados elegantes */
 .gradient-text {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-/* Efectos de fondo */
+.gradient-primary {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 50%, #e2e8f0 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #64748b 0%, #475569 50%, #334155 100%);
+}
+
+/* Efectos de fondo elegantes */
 .bg-pattern {
-  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0);
-  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 1px 1px, rgba(15, 23, 42, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f1f5f9' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='m0 40l40-40h-40v40zm40 0v-40h-40l40 40z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Estilos para avatar */

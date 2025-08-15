@@ -1,0 +1,51 @@
+---
+// Componente Header con navegación
+---
+
+<header class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 shadow-sm slide-in-down">
+  <nav class="container mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <div class="text-2xl font-bold text-gray-900 fade-in-left">
+        Alisha Ibarra
+      </div>
+      
+      <div class="hidden md:flex space-x-8 fade-in-right">
+        <a href="#inicio" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">Inicio</a>
+        <a href="#sobre-mi" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">Sobre mí</a>
+        <a href="#experiencia" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">Experiencia</a>
+        <a href="#competencias" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">Competencias</a>
+        <a href="#formacion" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">Formación</a>
+        <a href="#contacto" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">Contacto</a>
+      </div>
+      
+      <div class="md:hidden fade-in-right">
+        <button id="menu-toggle" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-110">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden mt-4">
+      <div class="flex flex-col space-y-4">
+        <a href="#inicio" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:translate-x-2">Inicio</a>
+        <a href="#sobre-mi" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:translate-x-2">Sobre mí</a>
+        <a href="#experiencia" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:translate-x-2">Experiencia</a>
+        <a href="#competencias" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:translate-x-2">Competencias</a>
+        <a href="#formacion" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:translate-x-2">Formación</a>
+        <a href="#contacto" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:translate-x-2">Contacto</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  menuToggle?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>

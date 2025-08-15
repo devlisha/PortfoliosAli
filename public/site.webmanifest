@@ -1,0 +1,29 @@
+{
+  "name": "Alisha Ibarra Bello - Portfolio",
+  "short_name": "Alisha Portfolio",
+  "description": "Portfolio de Alisha Ibarra Bello - Diseñadora y Desarrolladora",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon-16.svg",
+      "sizes": "16x16",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "32x32",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["business", "portfolio", "professional"],
+  "lang": "es"
+}

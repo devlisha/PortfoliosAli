@@ -1,0 +1,91 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo negro elegante para Apple Touch Icon -->
+  <rect width="180" height="180" rx="40" fill="url(#backgroundGradient)"/>
+  
+  <!-- Sombra interna elegante -->
+  <rect x="4" y="4" width="172" height="172" rx="36" fill="none" stroke="url(#innerShadow)" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Letra A principal -->
+  <g transform="translate(45, 30)">
+    <!-- Cuerpo principal de la A -->
+    <path d="M45 120L15 120L52.5 10L67.5 10L105 120L75 120L68 95L37 95L45 120Z" 
+          fill="url(#letterGradient)" 
+          stroke="url(#letterStroke)" 
+          stroke-width="1.5"/>
+    
+    <!-- Línea horizontal decorativa -->
+    <rect x="30" y="78" width="45" height="8" 
+          fill="url(#accentGradient)" 
+          rx="4"/>
+    
+    <!-- Punto decorativo superior -->
+    <circle cx="60" cy="20" r="5" 
+            fill="url(#accentGradient)" 
+            opacity="0.95"/>
+    
+    <!-- Elementos decorativos minimalistas -->
+    <circle cx="25" cy="25" r="2" fill="url(#accentGradient)" opacity="0.7"/>
+    <circle cx="95" cy="25" r="2" fill="url(#accentGradient)" opacity="0.7"/>
+  </g>
+  
+  <!-- Efectos de luz sutil -->
+  <ellipse cx="90" cy="45" rx="30" ry="15" fill="url(#lightEffect)" opacity="0.2"/>
+  
+  <!-- Borde decorativo -->
+  <rect x="8" y="8" width="164" height="164" rx="32" fill="none" stroke="url(#borderGradient)" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Definición de gradientes monocromáticos premium -->
+  <defs>
+    <!-- Gradiente de fondo negro premium -->
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2d2d2d;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradiente de la letra blanca premium -->
+    <linearGradient id="letterGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#f8f9fa;stop-opacity:0.98" />
+      <stop offset="70%" style="stop-color:#e9ecef;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#dee2e6;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <!-- Contorno elegante -->
+    <linearGradient id="letterStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6c757d;stop-opacity:0.5" />
+      <stop offset="50%" style="stop-color:#495057;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#343a40;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <!-- Gradiente de acento gris elegante -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="50%" style="stop-color:#f8f9fa;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#e9ecef;stop-opacity:0.85" />
+    </linearGradient>
+    
+    <!-- Sombra interna sutil -->
+    <linearGradient id="innerShadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.15" />
+      <stop offset="30%" style="stop-color:#000000;stop-opacity:0.05" />
+      <stop offset="70%" style="stop-color:#ffffff;stop-opacity:0.08" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:0.1" />
+    </linearGradient>
+    
+    <!-- Efecto de luz -->
+    <radialGradient id="lightEffect" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+    
+    <!-- Borde elegante -->
+    <linearGradient id="borderGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#6c757d;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+</svg>

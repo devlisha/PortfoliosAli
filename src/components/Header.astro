@@ -1,49 +1,47 @@
 ---
-// Componente Header con navegación
+// Header minimalista enfocado a UX/UI
 ---
 
-<header class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 shadow-sm slide-in-down">
-  <nav class="container mx-auto px-6 py-4">
-    <div class="flex justify-between items-center">
-      <div class="text-2xl font-bold text-gray-900 fade-in-left">
-        Alisha Ibarra
+<header class="fixed top-0 w-full z-50 slide-in-down">
+  <div class="mx-auto max-w-7xl px-6">
+    <nav class="flex h-16 items-center justify-between rounded-b-2xl backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/60 border-b border-slate-200/60">
+      <!-- Marca -->
+      <a href="#inicio" class="group inline-flex items-center gap-2 pl-3">
+        <span class="inline-flex h-7 w-7 items-center justify-center rounded-md bg-slate-900 text-white shadow-sm">AI</span>
+        <span class="text-sm text-slate-700">Alisha Ibarra<span class="mx-2 text-slate-400">—</span><span class="font-semibold">UX/UI Designer</span></span>
+      </a>
+
+      <!-- Navegación -->
+      <div class="hidden md:flex items-center gap-6 pr-3">
+  <a href="#proceso" class="text-slate-600 hover:text-slate-900 transition-colors">Proceso</a>
+  <a href="#sobre-mi" class="text-slate-600 hover:text-slate-900 transition-colors">Sobre mí</a>
+  <a href="mailto:ibarrabelloalisha@gmail.com" class="text-slate-600 hover:text-slate-900 transition-colors">Contacto</a>
+  <a href="mailto:ibarrabelloalisha@gmail.com" class="ml-2 inline-flex items-center rounded-full bg-slate-900 text-white px-3 py-1.5 text-sm font-medium hover:bg-slate-800 transition-colors">Contactar</a>
       </div>
-      
-      <div class="hidden md:flex space-x-8 fade-in-right">
-        <a href="#inicio" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">Inicio</a>
-        <a href="#sobre-mi" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">Sobre mí</a>
-        <a href="#experiencia" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">Experiencia</a>
-        <a href="#competencias" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">Competencias</a>
-        <a href="#formacion" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:-translate-y-1">Formación</a>
-      </div>
-      
-      <div class="md:hidden fade-in-right">
-        <button id="menu-toggle" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-110">
+
+      <!-- Menú móvil -->
+      <div class="md:hidden pr-2">
+        <button id="menu-toggle" aria-label="Abrir menú" class="focus-ring rounded-md p-2 text-slate-600 hover:text-slate-900">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </div>
-    </div>
-    
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden mt-4">
-      <div class="flex flex-col space-y-4">
-        <a href="#inicio" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:translate-x-2">Inicio</a>
-        <a href="#sobre-mi" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:translate-x-2">Sobre mí</a>
-        <a href="#experiencia" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:translate-x-2">Experiencia</a>
-        <a href="#competencias" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:translate-x-2">Competencias</a>
-        <a href="#formacion" class="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:translate-x-2">Formación</a>
+    </nav>
+
+    <!-- Mobile sheet -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2 rounded-2xl bg-white/90 backdrop-blur border border-slate-200 p-4 shadow-lg">
+      <div class="grid gap-3">
+  <a href="#proceso" class="text-slate-700 hover:text-slate-900">Proceso</a>
+  <a href="#sobre-mi" class="text-slate-700 hover:text-slate-900">Sobre mí</a>
+  <a href="mailto:ibarrabelloalisha@gmail.com" class="text-slate-700 hover:text-slate-900">Contacto</a>
       </div>
     </div>
-  </nav>
+  </div>
 </header>
 
 <script>
   const menuToggle = document.getElementById('menu-toggle');
   const mobileMenu = document.getElementById('mobile-menu');
-  
-  menuToggle?.addEventListener('click', () => {
-    mobileMenu?.classList.toggle('hidden');
-  });
+  menuToggle?.addEventListener('click', () => mobileMenu?.classList.toggle('hidden'));
 </script>

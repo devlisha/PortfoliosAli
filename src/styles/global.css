@@ -5,6 +5,59 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Design tokens */
+:root {
+  --bg: #0b1220;
+  --surface: #0f172a; /* slate-900 */
+  --surface-2: #111827; /* gray-900 */
+  --card: #ffffff;
+  --muted: #64748b; /* slate-500 */
+  --text: #0f172a; /* slate-900 */
+  --accent: #334155; /* slate-700 */
+  --accent-2: #22d3ee; /* cyan-400 */
+  --ring: rgba(2,132,199,0.25);
+  --radius: 16px;
+}
+
+body {
+  font-family: 'Nunito', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Syncopate', system-ui, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+/* Small helpers */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  line-height: 1;
+  color: #0f172a;
+  background: #f1f5f9;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.focus-ring:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 6px var(--ring);
+}
+
 /* Animaciones suaves para elementos */
 .fade-in {
   animation: fadeIn 0.6s ease-in-out;

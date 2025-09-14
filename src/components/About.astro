@@ -1,41 +1,71 @@
 ---
-// Componente Sobre mí (pitch UX/UI)
+// About Me Component (UX/UI pitch) - Brutalist Design
 ---
 
-<section id="sobre-mi" class="py-20 bg-white">
-  <div class="mx-auto max-w-7xl px-6">
-    <div class="grid md:grid-cols-3 gap-10 items-start">
-      <div class="md:col-span-2">
-        <h2 class="text-4xl font-bold tracking-tight text-slate-900 mb-6">Sobre mí</h2>
-        <p class="text-lg text-slate-600 max-w-2xl">
-          Soy UX/UI Designer enfocada en diseñar experiencias claras, accesibles y medibles. Trabajo de forma colaborativa con negocio y desarrollo para transformar insights en interfaces efectivas.
-        </p>
-        <div class="mt-6 grid sm:grid-cols-3 gap-4">
-          <div class="card p-4">
-            <p class="text-sm text-slate-500">Foco</p>
-            <p class="font-semibold text-slate-800">Research → Prototipado → Tests</p>
-          </div>
-          <div class="card p-4">
-            <p class="text-sm text-slate-500">Herramientas</p>
-            <p class="font-semibold text-slate-800">Figma, FigJam, Notion</p>
-          </div>
-          <div class="card p-4">
-            <p class="text-sm text-slate-500">Frontend</p>
-            <p class="font-semibold text-slate-800">iOS (Swift), Angular, React</p>
-          </div>
-        </div>
-      </div>
-      <aside>
-        <div class="card p-6">
-          <p class="text-sm text-slate-500">Disponibilidad</p>
-          <p class="font-semibold text-slate-800">Proyectos freelance / Híbrido Madrid</p>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span class="tag">Accesibilidad</span>
-            <span class="tag">Design systems</span>
-            <span class="tag">Prototipado</span>
-          </div>
-        </div>
-      </aside>
+<div class="brutalist-about">
+  <!-- Main title block -->
+  <div class="brutalist-box mb-8" style="background: var(--black); color: var(--white); padding: 2rem;">
+    <h2 class="brutalist-heading">ABOUT ME</h2>
+  </div>
+
+  <!-- Description block -->
+  <div class="brutalist-box mb-8" style="background: var(--red); color: var(--black); padding: 2rem;">
+    <p class="text-lg font-bold leading-tight">
+      I'M A UX/UI DESIGNER FOCUSED ON CREATING CLEAR, ACCESSIBLE, AND MEASURABLE EXPERIENCES. I WORK COLLABORATIVELY WITH BUSINESS AND DEVELOPMENT TO TRANSFORM INSIGHTS INTO EFFECTIVE INTERFACES.
+    </p>
+  </div>
+
+  <!-- Grid of info blocks -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+    <div class="brutalist-box" style="background: var(--yellow); color: var(--black); padding: 1.5rem;">
+      <p class="font-bold text-sm mb-2">FOCUS</p>
+      <p class="font-black uppercase text-sm leading-tight">RESEARCH → PROTOTYPING → TESTING</p>
+    </div>
+    
+    <div class="brutalist-box" style="background: var(--blue); color: var(--white); padding: 1.5rem;">
+      <p class="font-bold text-sm mb-2">TOOLS</p>
+      <p class="font-black uppercase text-sm leading-tight">FIGMA, FIGJAM, NOTION</p>
+    </div>
+    
+    <div class="brutalist-box" style="background: var(--green); color: var(--black); padding: 1.5rem;">
+      <p class="font-bold text-sm mb-2">FRONTEND</p>
+      <p class="font-black uppercase text-sm leading-tight">iOS (SWIFT), ANGULAR, REACT</p>
+    </div>
+    
+    <div class="brutalist-box" style="background: var(--white); color: var(--black); padding: 1.5rem; border: 4px solid var(--black);">
+      <p class="font-bold text-sm mb-2">AVAILABILITY</p>
+      <p class="font-black uppercase text-sm leading-tight">FREELANCE PROJECTS / HYBRID MADRID</p>
     </div>
   </div>
-</section>
+
+  <!-- Tags section -->
+  <div class="brutalist-box" style="background: var(--black); color: var(--white); padding: 2rem;">
+    <h3 class="font-black uppercase text-lg mb-4">SPECIALTIES</h3>
+    <div class="flex flex-wrap gap-3">
+      <span class="btn btn-yellow text-sm">ACCESSIBILITY</span>
+      <span class="btn btn-red text-sm">DESIGN SYSTEMS</span>
+      <span class="btn btn-blue text-sm">PROTOTYPING</span>
+      <span class="btn btn-green text-sm">UX RESEARCH</span>
+    </div>
+  </div>
+</div>
+
+<style>
+.brutalist-about {
+  /* Add any additional styling here */
+}
+
+.brutalist-heading {
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .brutalist-heading {
+    font-size: 2rem;
+  }
+}
+</style>

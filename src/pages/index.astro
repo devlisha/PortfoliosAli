@@ -11,12 +11,39 @@ import Footer from '../components/Footer.astro';
 
 <Layout title="Alisha Ibarra Bello - Portfolio">
 	<Header />
-	<main>
-		<Hero />
-		<About />
-		<Process />
-		<Skills />
-		<Experience />
+	<main class="pt-20">
+		<!-- Brutalist layout: stacked sections with geometric blocks -->
+		<section id="home">
+			<Hero />
+		</section>
+		
+		<!-- About Section -->
+		<section id="about" class="py-16 bg-white">
+			<div class="mx-auto max-w-7xl px-6">
+				<About />
+			</div>
+		</section>
+		
+		<!-- Process Section -->
+		<section id="process" class="py-16 brutalist-bg-yellow">
+			<div class="mx-auto max-w-7xl px-6">
+				<Process />
+			</div>
+		</section>
+		
+		<!-- Skills Section -->
+		<section id="skills" class="py-16 brutalist-bg-blue">
+			<div class="mx-auto max-w-7xl px-6">
+				<Skills />
+			</div>
+		</section>
+		
+		<!-- Experience Section -->
+		<section id="experience" class="py-16 bg-white">
+			<div class="mx-auto max-w-7xl px-6">
+				<Experience />
+			</div>
+		</section>
 	</main>
 	<Footer />
 </Layout>

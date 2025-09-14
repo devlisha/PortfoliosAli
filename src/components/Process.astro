@@ -1,35 +1,89 @@
 ---
-// Sección de proceso UX con pasos claros
+// UX Process Section with Clear Steps - Brutalist Design
 ---
 
-<section id="proceso" class="py-20 bg-slate-50">
-  <div class="mx-auto max-w-7xl px-6">
-    <div class="text-center mb-14">
-      <h2 class="text-4xl font-bold tracking-tight text-slate-900">Proceso</h2>
-      <p class="mt-3 text-slate-600 max-w-2xl mx-auto">De la comprensión del problema al handoff al equipo de desarrollo.</p>
+<div class="brutalist-process">
+  <!-- Main title block -->
+  <div class="brutalist-box mb-8" style="background: var(--black); color: var(--white); padding: 2rem;">
+    <h2 class="brutalist-heading">PROCESS</h2>
+    <p class="font-bold text-lg mt-4 uppercase">FROM PROBLEM UNDERSTANDING TO DEVELOPMENT TEAM HANDOFF</p>
+  </div>
+
+  <!-- Process steps grid -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Step 1: Research -->
+    <div class="brutalist-box" style="background: var(--red); color: var(--white); padding: 2rem;">
+      <div class="flex items-center justify-center w-12 h-12 bg-black text-white font-black text-xl mb-4">
+        01
+      </div>
+      <h3 class="font-black uppercase text-xl mb-4 tracking-tight">RESEARCH</h3>
+      <p class="font-bold text-sm uppercase leading-tight">
+        INTERVIEWS, BENCHMARKS, ANALYTICS AND HYPOTHESIS DEFINITION
+      </p>
     </div>
 
-    <ol class="grid md:grid-cols-4 gap-6 counter-reset-[step]">
-      <li class="card p-6">
-        <span class="tag">01</span>
-        <h3 class="mt-4 font-bold tracking-tight text-slate-900">Research</h3>
-        <p class="mt-2 text-sm text-slate-600">Entrevistas, benchmarks, analítica y definición de hipótesis.</p>
-      </li>
-      <li class="card p-6">
-        <span class="tag">02</span>
-        <h3 class="mt-4 font-bold tracking-tight text-slate-900">Ideación</h3>
-        <p class="mt-2 text-sm text-slate-600">Mapas de flujo, wireframes y selección de soluciones.</p>
-      </li>
-      <li class="card p-6">
-        <span class="tag">03</span>
-        <h3 class="mt-4 font-bold tracking-tight text-slate-900">Prototipado</h3>
-        <p class="mt-2 text-sm text-slate-600">Prototipos de media/alta fidelidad y microinteracciones.</p>
-      </li>
-      <li class="card p-6">
-        <span class="tag">04</span>
-        <h3 class="mt-4 font-bold tracking-tight text-slate-900">Validación</h3>
-        <p class="mt-2 text-sm text-slate-600">Tests con usuarios, iteración y handoff con documentación.</p>
-      </li>
-    </ol>
+    <!-- Step 2: Ideation -->
+    <div class="brutalist-box" style="background: var(--yellow); color: var(--black); padding: 2rem;">
+      <div class="flex items-center justify-center w-12 h-12 bg-black text-white font-black text-xl mb-4">
+        02
+      </div>
+      <h3 class="font-black uppercase text-xl mb-4 tracking-tight">IDEATION</h3>
+      <p class="font-bold text-sm uppercase leading-tight">
+        FLOW MAPS, WIREFRAMES AND SOLUTION SELECTION
+      </p>
+    </div>
+
+    <!-- Step 3: Prototyping -->
+    <div class="brutalist-box" style="background: var(--blue); color: var(--white); padding: 2rem;">
+      <div class="flex items-center justify-center w-12 h-12 bg-black text-white font-black text-xl mb-4">
+        03
+      </div>
+      <h3 class="font-black uppercase text-xl mb-4 tracking-tight">PROTOTYPING</h3>
+      <p class="font-bold text-sm uppercase leading-tight">
+        MEDIUM/HIGH FIDELITY PROTOTYPES AND MICROINTERACTIONS
+      </p>
+    </div>
+
+    <!-- Step 4: Validation -->
+    <div class="brutalist-box" style="background: var(--green); color: var(--black); padding: 2rem;">
+      <div class="flex items-center justify-center w-12 h-12 bg-black text-white font-black text-xl mb-4">
+        04
+      </div>
+      <h3 class="font-black uppercase text-xl mb-4 tracking-tight">VALIDATION</h3>
+      <p class="font-bold text-sm uppercase leading-tight">
+        USER TESTING, ITERATION AND HANDOFF WITH DOCUMENTATION
+      </p>
+    </div>
   </div>
-</section>
+
+  <!-- Bottom accent block -->
+  <div class="brutalist-box mt-8" style="background: var(--black); color: var(--white); padding: 1rem;">
+    <p class="font-black uppercase text-center text-lg">
+      DATA-DRIVEN DESIGN • CONSTANT ITERATION • CLOSE COLLABORATION
+    </p>
+  </div>
+</div>
+
+<style>
+.brutalist-process {
+  /* Additional styling for process section */
+}
+
+.brutalist-heading {
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .brutalist-heading {
+    font-size: 2rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

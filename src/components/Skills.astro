@@ -1,59 +1,94 @@
 ---
-// Competencias como chips y bloques compactos
+// Skills as chips and compact blocks - Brutalist Design
 ---
 
-<section id="competencias" class="py-20 bg-white">
-  <div class="mx-auto max-w-7xl px-6">
-    <div class="mb-10">
-      <h2 class="text-4xl font-bold tracking-tight text-slate-900">Competencias</h2>
-      <p class="mt-2 text-slate-600">Herramientas, tecnologías y áreas de enfoque.</p>
+<div class="brutalist-skills">
+  <!-- Main title block -->
+  <div class="brutalist-box mb-8" style="background: var(--white); color: var(--black); padding: 2rem; border: 4px solid var(--black);">
+    <h2 class="brutalist-heading">SKILLS</h2>
+    <p class="font-bold text-lg mt-4 uppercase">TOOLS, TECHNOLOGIES AND FOCUS AREAS</p>
+  </div>
+
+  <!-- Skills grid -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- Programming Languages -->
+    <div class="brutalist-box" style="background: var(--red); color: var(--white); padding: 2rem;">
+      <h3 class="font-black uppercase text-xl mb-6 tracking-tight">LANGUAGES</h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="btn btn-black text-xs">SWIFT</span>
+        <span class="btn btn-black text-xs">JAVASCRIPT</span>
+        <span class="btn btn-black text-xs">TYPESCRIPT</span>
+        <span class="btn btn-black text-xs">PYTHON</span>
+        <span class="btn btn-black text-xs">KOTLIN</span>
+        <span class="btn btn-black text-xs">JAVA</span>
+      </div>
     </div>
 
-  <div class="grid md:grid-cols-4 gap-6">
-      <article class="card p-6">
-        <h3 class="font-bold tracking-tight text-slate-900">Lenguajes</h3>
-        <div class="mt-4 flex flex-wrap gap-2">
-          <span class="tag">Swift</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">Python</span>
-          <span class="tag">Kotlin</span>
-          <span class="tag">Java</span>
-        </div>
-      </article>
+    <!-- Frameworks -->
+    <div class="brutalist-box" style="background: var(--yellow); color: var(--black); padding: 2rem;">
+      <h3 class="font-black uppercase text-xl mb-6 tracking-tight">FRAMEWORKS</h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="btn btn-black text-xs">ANGULAR</span>
+        <span class="btn btn-black text-xs">REACT</span>
+        <span class="btn btn-black text-xs">ASTRO</span>
+        <span class="btn btn-black text-xs">SPRING</span>
+      </div>
+    </div>
 
-      <article class="card p-6">
-        <h3 class="font-bold tracking-tight text-slate-900">Frameworks</h3>
-        <div class="mt-4 flex flex-wrap gap-2">
-          <span class="tag">Angular</span>
-          <span class="tag">React</span>
-          <span class="tag">Astro</span>
-          <span class="tag">Spring</span>
-        </div>
-      </article>
+    <!-- Tools -->
+    <div class="brutalist-box" style="background: var(--blue); color: var(--white); padding: 2rem;">
+      <h3 class="font-black uppercase text-xl mb-6 tracking-tight">TOOLS</h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="btn btn-black text-xs">FIGMA</span>
+        <span class="btn btn-black text-xs">CANVA</span>
+        <span class="btn btn-black text-xs">FIGJAM</span>
+        <span class="btn btn-black text-xs">NOTION</span>
+        <span class="btn btn-black text-xs">GIT</span>
+        <span class="btn btn-black text-xs">FRAMER</span>
+        <span class="btn btn-black text-xs">WORDPRESS</span>
+      </div>
+    </div>
 
-      <article class="card p-6">
-        <h3 class="font-bold tracking-tight text-slate-900">Herramientas</h3>
-        <div class="mt-4 flex flex-wrap gap-2">
-          <span class="tag">Figma</span>
-          <span class="tag">Canva</span>
-          <span class="tag">FigJam</span>
-          <span class="tag">Notion</span>
-          <span class="tag">Git</span>
-          <span class="tag">Framer</span>
-          <span class="tag">WordPress</span>
-        </div>
-      </article>
-
-      <article class="card p-6">
-        <h3 class="font-bold tracking-tight text-slate-900">Idiomas</h3>
-        <div class="mt-4 flex flex-wrap gap-2">
-          <span class="tag">Español (Nativo)</span>
-          <span class="tag">Inglés (Intermedio)</span>
-          <span class="tag">Francés (Básico)</span>
-          <span class="tag">Alemán (Básico)</span>
-        </div>
-      </article>
+    <!-- Languages -->
+    <div class="brutalist-box" style="background: var(--green); color: var(--black); padding: 2rem;">
+      <h3 class="font-black uppercase text-xl mb-6 tracking-tight">LANGUAGES</h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="btn btn-black text-xs">SPANISH (NATIVE)</span>
+        <span class="btn btn-black text-xs">ENGLISH (INTERMEDIATE)</span>
+        <span class="btn btn-black text-xs">FRENCH (BASIC)</span>
+        <span class="btn btn-black text-xs">GERMAN (BASIC)</span>
+      </div>
     </div>
   </div>
-</section>
+
+  <!-- Bottom statement block -->
+  <div class="brutalist-box mt-8" style="background: var(--black); color: var(--white); padding: 2rem;">
+    <p class="font-black uppercase text-center text-xl">
+      ALWAYS LEARNING • ALWAYS IMPROVING • ALWAYS DESIGNING
+    </p>
+  </div>
+</div>
+
+<style>
+.brutalist-skills {
+  /* Additional styling for skills section */
+}
+
+.brutalist-heading {
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .brutalist-heading {
+    font-size: 2rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

@@ -1,40 +1,42 @@
 ---
-// Header minimalista enfocado a UX/UI
+// Brutalist Header
 ---
 
-<header class="fixed top-0 w-full z-50 slide-in-down">
+<header class="fixed top-0 w-full z-50">
   <div class="mx-auto max-w-7xl px-6">
-    <nav class="flex h-16 items-center justify-between rounded-b-2xl backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/60 border-b border-slate-200/60">
-      <!-- Marca -->
-      <a href="#inicio" class="group inline-flex items-center gap-2 pl-3">
-        <span class="inline-flex h-7 w-7 items-center justify-center rounded-md bg-slate-900 text-white shadow-sm">AI</span>
-        <span class="text-sm text-slate-700">Alisha Ibarra<span class="mx-2 text-slate-400">—</span><span class="font-semibold">UX/UI Designer</span></span>
+    <nav class="flex h-20 items-center justify-between bg-black border-b-4 border-black">
+      <!-- Brand -->
+      <a href="#home" class="group inline-flex items-center gap-3 pl-4">
+        <span class="inline-flex h-10 w-10 items-center justify-center bg-red text-white border-2 border-white brutalist-text text-lg">AI</span>
+        <div>
+          <span class="block text-white brutalist-text text-sm leading-none">ALISHA IBARRA</span>
+          <span class="block text-red font-bold text-xs">UX/UI DESIGNER</span>
+        </div>
       </a>
 
-      <!-- Navegación -->
-      <div class="hidden md:flex items-center gap-6 pr-3">
-  <a href="#proceso" class="text-slate-600 hover:text-slate-900 transition-colors">Proceso</a>
-  <a href="#sobre-mi" class="text-slate-600 hover:text-slate-900 transition-colors">Sobre mí</a>
-  <a href="mailto:ibarrabelloalisha@gmail.com" class="text-slate-600 hover:text-slate-900 transition-colors">Contacto</a>
-  <a href="mailto:ibarrabelloalisha@gmail.com" class="ml-2 inline-flex items-center rounded-full bg-slate-900 text-white px-3 py-1.5 text-sm font-medium hover:bg-slate-800 transition-colors">Contactar</a>
+      <!-- Navigation -->
+      <div class="hidden md:flex items-center gap-0 pr-4">
+        <a href="#process" class="brutalist-box bg-yellow px-4 py-2 mr-2 font-bold hover:bg-white transition-colors">PROCESS</a>
+        <a href="#about" class="brutalist-box bg-blue text-white px-4 py-2 mr-2 font-bold hover:bg-green transition-colors">ABOUT</a>
+        <a href="mailto:ibarrabelloalisha@gmail.com" class="btn btn-primary">CONTACT</a>
       </div>
 
-      <!-- Menú móvil -->
-      <div class="md:hidden pr-2">
-        <button id="menu-toggle" aria-label="Abrir menú" class="focus-ring rounded-md p-2 text-slate-600 hover:text-slate-900">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      <!-- Mobile menu button -->
+      <div class="md:hidden pr-4">
+        <button id="menu-toggle" aria-label="Open menu" class="bg-red text-white p-2 border-2 border-white">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
           </svg>
         </button>
       </div>
     </nav>
 
-    <!-- Mobile sheet -->
-    <div id="mobile-menu" class="hidden md:hidden mt-2 rounded-2xl bg-white/90 backdrop-blur border border-slate-200 p-4 shadow-lg">
-      <div class="grid gap-3">
-  <a href="#proceso" class="text-slate-700 hover:text-slate-900">Proceso</a>
-  <a href="#sobre-mi" class="text-slate-700 hover:text-slate-900">Sobre mí</a>
-  <a href="mailto:ibarrabelloalisha@gmail.com" class="text-slate-700 hover:text-slate-900">Contacto</a>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black border-4 border-black p-4">
+      <div class="space-y-3">
+        <a href="#process" class="block brutalist-box bg-yellow p-3 font-bold hover:bg-white">PROCESS</a>
+        <a href="#about" class="block brutalist-box bg-blue text-white p-3 font-bold hover:bg-green">ABOUT</a>
+        <a href="mailto:ibarrabelloalisha@gmail.com" class="block btn btn-primary text-center">CONTACT</a>
       </div>
     </div>
   </div>

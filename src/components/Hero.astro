@@ -1,38 +1,92 @@
 ---
-// Sección Hero con enfoque UX/UI y CTA a casos de estudio
+// Brutalist Hero Section
+const { compact = false } = Astro.props;
 ---
 
-<section id="inicio" class="relative min-h-[80vh] flex items-center bg-gradient-to-b from-white to-slate-50">
-  <div class="mx-auto max-w-7xl px-6 py-20 md:py-28 w-full">
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <span class="tag fade-in-up">Disponible · Madrid</span>
-        <h1 class="mt-6 text-5xl md:text-6xl font-bold tracking-tight text-slate-900 fade-in-up delay-100">
-          Alisha Ibarra<br />
-          <span class="text-slate-500">UX/UI Designer</span>
-        </h1>
-        <p class="mt-6 text-lg text-slate-600 max-w-xl fade-in-up delay-200">
-          Diseño productos que resuelven problemas reales con procesos centrados en las personas: research, ideación, prototipado y validación.
-        </p>
-        <div class="mt-8 flex flex-col sm:flex-row gap-3 fade-in-up delay-300">
-          <a href="mailto:ibarrabelloalisha@gmail.com" class="inline-flex items-center rounded-xl bg-slate-900 text-white px-6 py-3 text-sm font-medium hover:bg-slate-800 transition-colors shadow-sm">Contactar</a>
-          <a href="#proceso" class="inline-flex items-center rounded-xl border border-slate-300 text-slate-700 hover:text-slate-900 hover:border-slate-400 px-6 py-3 text-sm font-medium transition-colors bg-white">Mi proceso</a>
+<section id="home" class={compact ? 'relative p-4' : 'relative min-h-screen flex items-center bg-white'}>
+  <div class={compact ? 'w-full' : 'mx-auto max-w-7xl px-6 py-16 w-full'}>
+    {compact ? (
+      <!-- Compact brutalist layout -->
+      <div class="grid grid-cols-1 gap-4">
+        <div class="brutalist-box p-4 brutalist-bg-yellow">
+          <span class="tag">AVAILABLE • MADRID</span>
+          <h1 class="mt-2 text-xl brutalist-text leading-none">
+            ALISHA<br/>
+            IBARRA
+          </h1>
+          <div class="mt-2 bg-black text-white p-2">
+            <p class="text-sm font-bold">UX/UI DESIGNER</p>
+          </div>
         </div>
-        <div class="mt-8 flex items-center gap-6 text-slate-500 fade-in-up delay-400">
-          <a class="hover:text-slate-900" href="mailto:ibarrabelloalisha@gmail.com">Email</a>
-          <a class="hover:text-slate-900" href="https://www.linkedin.com/in/alisha-ibarra-bello-4526561b6" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a class="hover:text-slate-900" href="https://github.com/devlisha" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-      </div>
-      <div class="justify-self-center">
-        <div class="card p-6 fade-in-up delay-200">
-          <img src="/imagenpro-2.png" alt="Alisha Ibarra Bello" class="w-52 h-52 md:w-64 md:h-64 mx-auto rounded-2xl object-cover shadow-2xl avatar-image">
-          <div class="mt-4 text-center">
-            <p class="text-sm text-slate-500">Último proyecto</p>
-            <p class="text-slate-800 font-semibold">App iOS · Onboarding + UI Kit</p>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <div class="brutalist-box p-3 bg-white">
+            <img src="/imagenpro-2.png" alt="ALISHA IBARRA" class="w-full aspect-square object-cover border-2 border-black">
+          </div>
+          <div class="brutalist-box p-3 brutalist-bg-red">
+            <p class="text-white font-bold text-xs leading-tight">
+              DESIGNING REAL SOLUTIONS WITH USER-CENTERED PROCESSES
+            </p>
+            <div class="mt-2 space-y-1">
+              <a href="mailto:ibarrabelloalisha@gmail.com" class="btn btn-primary text-xs py-2 px-3">CONTACT</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    ) : (
+      <!-- Full brutalist layout -->
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <!-- Main content -->
+        <div class="lg:col-span-8">
+          <div class="brutalist-box p-8 brutalist-bg-yellow mb-8">
+            <span class="tag mb-4">AVAILABLE • MADRID</span>
+            <h1 class="text-7xl lg:text-8xl brutalist-text leading-none mb-4">
+              ALISHA<br/>
+              IBARRA
+            </h1>
+            <div class="bg-black text-white p-4 inline-block">
+              <p class="text-2xl font-bold">UX/UI DESIGNER</p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="brutalist-box p-6 bg-white">
+              <h2 class="brutalist-text text-lg mb-4">ABOUT</h2>
+              <p class="font-bold leading-tight">
+                DESIGNING PRODUCTS THAT SOLVE REAL PROBLEMS WITH USER-CENTERED PROCESSES: RESEARCH, IDEATION, PROTOTYPING AND VALIDATION.
+              </p>
+            </div>
+            
+            <div class="brutalist-box p-6 brutalist-bg-red">
+              <h2 class="brutalist-text text-lg mb-4 text-white">CONTACT</h2>
+              <div class="space-y-3">
+                <a href="mailto:ibarrabelloalisha@gmail.com" class="btn btn-primary">EMAIL ME</a>
+                <a href="#process" class="btn btn-light">SEE PROCESS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-4 space-y-6">
+          <div class="brutalist-box p-6 bg-white">
+            <img src="/imagenpro-2.png" alt="ALISHA IBARRA" class="w-full aspect-square object-cover border-4 border-black mb-4">
+            <div class="bg-black text-white p-3">
+              <p class="font-bold text-sm">LATEST PROJECT</p>
+              <p class="text-xs">iOS APP • ONBOARDING + UI KIT</p>
+            </div>
+          </div>
+
+          <div class="brutalist-box p-4 brutalist-bg-blue">
+            <h3 class="brutalist-text text-sm mb-3 text-white">QUICK LINKS</h3>
+            <div class="space-y-2">
+              <a href="mailto:ibarrabelloalisha@gmail.com" class="block text-white font-bold hover:text-yellow-300">EMAIL</a>
+              <a href="https://www.linkedin.com/in/alisha-ibarra-bello-4526561b6" target="_blank" class="block text-white font-bold hover:text-yellow-300">LINKEDIN</a>
+              <a href="https://github.com/devlisha" target="_blank" class="block text-white font-bold hover:text-yellow-300">GITHUB</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    )}
   </div>
 </section>

@@ -1,89 +1,62 @@
 ---
-// UX Process Section with Clear Steps - Brutalist Design
+// Minimal Process Section
 ---
 
-<div class="brutalist-process">
-  <!-- Main title block -->
-  <div class="brutalist-box mb-8" style="background: var(--black); color: var(--white); padding: 2rem;">
-    <h2 class="brutalist-heading">PROCESS</h2>
-    <p class="font-bold text-lg mt-4 uppercase">FROM PROBLEM UNDERSTANDING TO DEVELOPMENT TEAM HANDOFF</p>
+<section id="process" class="section-padding bg-gray-50">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="max-w-2xl mb-16 fade-in-up">
+      <p class="minimal-subheading mb-4">My Approach</p>
+      <h2 class="minimal-heading mb-6">Design Process</h2>
+      <p class="minimal-body">
+        A systematic approach to solving problems through user-centered design, combining research insights with creative solutions.
+      </p>
+    </div>
+
+    <!-- Process steps grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Step 1: Research -->
+      <div class="minimal-card fade-in-up delay-100">
+        <div class="flex items-center justify-center w-12 h-12 bg-black text-white font-semibold text-lg mb-6">
+          01
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Research</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          User interviews, competitive analysis, and data gathering to understand the problem space deeply.
+        </p>
+      </div>
+
+      <!-- Step 2: Ideation -->
+      <div class="minimal-card fade-in-up delay-200">
+        <div class="flex items-center justify-center w-12 h-12 bg-black text-white font-semibold text-lg mb-6">
+          02
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Ideation</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          User flows, wireframes, and concept exploration to develop potential solutions.
+        </p>
+      </div>
+
+      <!-- Step 3: Prototyping -->
+      <div class="minimal-card fade-in-up delay-300">
+        <div class="flex items-center justify-center w-12 h-12 bg-black text-white font-semibold text-lg mb-6">
+          03
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Prototyping</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          High-fidelity prototypes with refined interactions and visual design systems.
+        </p>
+      </div>
+
+      <!-- Step 4: Validation -->
+      <div class="minimal-card fade-in-up delay-400">
+        <div class="flex items-center justify-center w-12 h-12 bg-black text-white font-semibold text-lg mb-6">
+          04
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Validation</h3>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          User testing, iteration, and final handoff with comprehensive documentation.
+        </p>
+      </div>
+    </div>
   </div>
-
-  <!-- Process steps grid -->
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-    <!-- Step 1: Research -->
-    <div class="brutalist-box" style="background: var(--red); color: var(--white); padding: 2rem;">
-      <div class="flex items-center justify-center w-12 h-12 bg-black text-white font-black text-xl mb-4">
-        01
-      </div>
-      <h3 class="font-black uppercase text-xl mb-4 tracking-tight">RESEARCH</h3>
-      <p class="font-bold text-sm uppercase leading-tight">
-        INTERVIEWS, BENCHMARKS, ANALYTICS AND HYPOTHESIS DEFINITION
-      </p>
-    </div>
-
-    <!-- Step 2: Ideation -->
-    <div class="brutalist-box" style="background: var(--yellow); color: var(--black); padding: 2rem;">
-      <div class="flex items-center justify-center w-12 h-12 bg-black text-white font-black text-xl mb-4">
-        02
-      </div>
-      <h3 class="font-black uppercase text-xl mb-4 tracking-tight">IDEATION</h3>
-      <p class="font-bold text-sm uppercase leading-tight">
-        FLOW MAPS, WIREFRAMES AND SOLUTION SELECTION
-      </p>
-    </div>
-
-    <!-- Step 3: Prototyping -->
-    <div class="brutalist-box" style="background: var(--blue); color: var(--white); padding: 2rem;">
-      <div class="flex items-center justify-center w-12 h-12 bg-black text-white font-black text-xl mb-4">
-        03
-      </div>
-      <h3 class="font-black uppercase text-xl mb-4 tracking-tight">PROTOTYPING</h3>
-      <p class="font-bold text-sm uppercase leading-tight">
-        MEDIUM/HIGH FIDELITY PROTOTYPES AND MICROINTERACTIONS
-      </p>
-    </div>
-
-    <!-- Step 4: Validation -->
-    <div class="brutalist-box" style="background: var(--green); color: var(--black); padding: 2rem;">
-      <div class="flex items-center justify-center w-12 h-12 bg-black text-white font-black text-xl mb-4">
-        04
-      </div>
-      <h3 class="font-black uppercase text-xl mb-4 tracking-tight">VALIDATION</h3>
-      <p class="font-bold text-sm uppercase leading-tight">
-        USER TESTING, ITERATION AND HANDOFF WITH DOCUMENTATION
-      </p>
-    </div>
-  </div>
-
-  <!-- Bottom accent block -->
-  <div class="brutalist-box mt-8" style="background: var(--black); color: var(--white); padding: 1rem;">
-    <p class="font-black uppercase text-center text-lg">
-      DATA-DRIVEN DESIGN • CONSTANT ITERATION • CLOSE COLLABORATION
-    </p>
-  </div>
-</div>
-
-<style>
-.brutalist-process {
-  /* Additional styling for process section */
-}
-
-.brutalist-heading {
-  font-family: 'Arial Black', Arial, sans-serif;
-  font-size: 3rem;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .brutalist-heading {
-    font-size: 2rem;
-  }
-  
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
+</section>

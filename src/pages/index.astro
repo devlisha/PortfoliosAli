@@ -9,39 +9,29 @@ import Skills from '../components/Skills.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Alisha Ibarra Bello - Portfolio">
+<Layout title="Alisha Ibarra Bello - UI/UX Designer">
 	<Header />
-	<main class="pt-20">
-		<!-- Brutalist layout: stacked sections with geometric blocks -->
-		<section id="home">
-			<Hero />
-		</section>
+	<main>
+		<Hero />
+		<About />
+		<Process />
+		<Skills />
+		<Experience />
 		
-		<!-- About Section -->
-		<section id="about" class="py-16 bg-white">
-			<div class="mx-auto max-w-7xl px-6">
-				<About />
-			</div>
-		</section>
-		
-		<!-- Process Section -->
-		<section id="process" class="py-16 brutalist-bg-yellow">
-			<div class="mx-auto max-w-7xl px-6">
-				<Process />
-			</div>
-		</section>
-		
-		<!-- Skills Section -->
-		<section id="skills" class="py-16 brutalist-bg-blue">
-			<div class="mx-auto max-w-7xl px-6">
-				<Skills />
-			</div>
-		</section>
-		
-		<!-- Experience Section -->
-		<section id="experience" class="py-16 bg-white">
-			<div class="mx-auto max-w-7xl px-6">
-				<Experience />
+		<!-- Contact Section -->
+		<section id="contact" class="section-padding bg-gray-50">
+			<div class="mx-auto max-w-4xl px-6 text-center">
+				<div class="fade-in-up">
+					<p class="minimal-subheading mb-4">Get In Touch</p>
+					<h2 class="minimal-heading mb-6">Let's Work Together</h2>
+					<p class="minimal-body mb-12 max-w-2xl mx-auto">
+						I'm currently available for freelance projects and open to new opportunities. 
+						Let's discuss how we can create something meaningful together.
+					</p>
+					<a href="mailto:ibarrabelloalisha@gmail.com" class="minimal-btn minimal-btn-primary text-lg px-8 py-4">
+						Start a Conversation
+					</a>
+				</div>
 			</div>
 		</section>
 	</main>

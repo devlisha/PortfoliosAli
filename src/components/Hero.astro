@@ -1,92 +1,65 @@
 ---
-// Brutalist Hero Section
+// Minimal Elegant Hero Section
 const { compact = false } = Astro.props;
 ---
 
-<section id="home" class={compact ? 'relative p-4' : 'relative min-h-screen flex items-center bg-white'}>
-  <div class={compact ? 'w-full' : 'mx-auto max-w-7xl px-6 py-16 w-full'}>
-    {compact ? (
-      <!-- Compact brutalist layout -->
-      <div class="grid grid-cols-1 gap-4">
-        <div class="brutalist-box p-4 brutalist-bg-yellow">
-          <span class="tag">AVAILABLE • MADRID</span>
-          <h1 class="mt-2 text-xl brutalist-text leading-none">
-            ALISHA<br/>
-            IBARRA
+<section id="home" class="relative min-h-screen flex items-center bg-white pt-20">
+  <div class="mx-auto max-w-7xl px-6 py-20 w-full">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <!-- Left: Content -->
+      <div class="space-y-8 fade-in-up">
+        <div class="space-y-4">
+          <p class="minimal-subheading">UI/UX Designer • Available for Projects</p>
+          <h1 class="minimal-title">
+            Alisha<br/>
+            Ibarra Bello
           </h1>
-          <div class="mt-2 bg-black text-white p-2">
-            <p class="text-sm font-bold">UX/UI DESIGNER</p>
-          </div>
+          <p class="minimal-body max-w-lg">
+            Designing thoughtful digital experiences through user-centered research, strategic thinking, and refined visual design.
+          </p>
         </div>
-        
-        <div class="grid grid-cols-2 gap-4">
-          <div class="brutalist-box p-3 bg-white">
-            <img src="/imagenpro-2.png" alt="ALISHA IBARRA" class="w-full aspect-square object-cover border-2 border-black">
+
+        <div class="flex flex-wrap gap-4">
+          <a href="mailto:ibarrabelloalisha@gmail.com" class="minimal-btn minimal-btn-primary">
+            Get in Touch
+          </a>
+          <a href="#process" class="minimal-btn minimal-btn-secondary">
+            View Process
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200">
+          <div>
+            <p class="text-3xl font-semibold text-black">1+</p>
+            <p class="text-sm text-gray-600 mt-1">Year Experience</p>
           </div>
-          <div class="brutalist-box p-3 brutalist-bg-red">
-            <p class="text-white font-bold text-xs leading-tight">
-              DESIGNING REAL SOLUTIONS WITH USER-CENTERED PROCESSES
-            </p>
-            <div class="mt-2 space-y-1">
-              <a href="mailto:ibarrabelloalisha@gmail.com" class="btn btn-primary text-xs py-2 px-3">CONTACT</a>
-            </div>
+          <div>
+            <p class="text-3xl font-semibold text-black">5+</p>
+            <p class="text-sm text-gray-600 mt-1">Projects</p>
+          </div>
+          <div>
+            <p class="text-3xl font-semibold text-black">100%</p>
+            <p class="text-sm text-gray-600 mt-1">Dedicated</p>
           </div>
         </div>
       </div>
-    ) : (
-      <!-- Full brutalist layout -->
-      <div class="grid lg:grid-cols-12 gap-8 items-start">
-        <!-- Main content -->
-        <div class="lg:col-span-8">
-          <div class="brutalist-box p-8 brutalist-bg-yellow mb-8">
-            <span class="tag mb-4">AVAILABLE • MADRID</span>
-            <h1 class="text-7xl lg:text-8xl brutalist-text leading-none mb-4">
-              ALISHA<br/>
-              IBARRA
-            </h1>
-            <div class="bg-black text-white p-4 inline-block">
-              <p class="text-2xl font-bold">UX/UI DESIGNER</p>
-            </div>
-          </div>
 
-          <div class="grid md:grid-cols-2 gap-6">
-            <div class="brutalist-box p-6 bg-white">
-              <h2 class="brutalist-text text-lg mb-4">ABOUT</h2>
-              <p class="font-bold leading-tight">
-                DESIGNING PRODUCTS THAT SOLVE REAL PROBLEMS WITH USER-CENTERED PROCESSES: RESEARCH, IDEATION, PROTOTYPING AND VALIDATION.
-              </p>
-            </div>
-            
-            <div class="brutalist-box p-6 brutalist-bg-red">
-              <h2 class="brutalist-text text-lg mb-4 text-white">CONTACT</h2>
-              <div class="space-y-3">
-                <a href="mailto:ibarrabelloalisha@gmail.com" class="btn btn-primary">EMAIL ME</a>
-                <a href="#process" class="btn btn-light">SEE PROCESS</a>
-              </div>
-            </div>
+      <!-- Right: Image -->
+      <div class="fade-in-up delay-200">
+        <div class="relative">
+          <div class="aspect-square overflow-hidden border border-gray-200">
+            <img 
+              src="/imagenpro-2.png" 
+              alt="Alisha Ibarra" 
+              class="w-full h-full object-cover minimal-image"
+            />
           </div>
-        </div>
-
-        <!-- Sidebar -->
-        <div class="lg:col-span-4 space-y-6">
-          <div class="brutalist-box p-6 bg-white">
-            <img src="/imagenpro-2.png" alt="ALISHA IBARRA" class="w-full aspect-square object-cover border-4 border-black mb-4">
-            <div class="bg-black text-white p-3">
-              <p class="font-bold text-sm">LATEST PROJECT</p>
-              <p class="text-xs">iOS APP • ONBOARDING + UI KIT</p>
-            </div>
-          </div>
-
-          <div class="brutalist-box p-4 brutalist-bg-blue">
-            <h3 class="brutalist-text text-sm mb-3 text-white">QUICK LINKS</h3>
-            <div class="space-y-2">
-              <a href="mailto:ibarrabelloalisha@gmail.com" class="block text-white font-bold hover:text-yellow-300">EMAIL</a>
-              <a href="https://www.linkedin.com/in/alisha-ibarra-bello-4526561b6" target="_blank" class="block text-white font-bold hover:text-yellow-300">LINKEDIN</a>
-              <a href="https://github.com/devlisha" target="_blank" class="block text-white font-bold hover:text-yellow-300">GITHUB</a>
-            </div>
+          <div class="absolute -bottom-6 -right-6 bg-black text-white p-6 max-w-xs">
+            <p class="text-sm font-medium">Currently designing meaningful experiences in Madrid, Spain.</p>
           </div>
         </div>
       </div>
-    )}
+    </div>
   </div>
 </section>

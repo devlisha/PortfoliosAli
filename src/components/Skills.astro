@@ -1,94 +1,65 @@
 ---
-// Skills as chips and compact blocks - Brutalist Design
+// Minimal Skills Section
 ---
 
-<div class="brutalist-skills">
-  <!-- Main title block -->
-  <div class="brutalist-box mb-8" style="background: var(--white); color: var(--black); padding: 2rem; border: 4px solid var(--black);">
-    <h2 class="brutalist-heading">SKILLS</h2>
-    <p class="font-bold text-lg mt-4 uppercase">TOOLS, TECHNOLOGIES AND FOCUS AREAS</p>
+<section id="skills" class="section-padding bg-white">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="max-w-2xl mb-16 fade-in-up">
+      <p class="minimal-subheading mb-4">Expertise</p>
+      <h2 class="minimal-heading mb-6">Skills & Tools</h2>
+      <p class="minimal-body">
+        A versatile toolkit combining design thinking, technical proficiency, and cross-functional collaboration.
+      </p>
+    </div>
+
+    <!-- Skills grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Design Tools -->
+      <div class="space-y-4 fade-in-up delay-100">
+        <h3 class="text-lg font-semibold border-b border-gray-200 pb-3">Design Tools</h3>
+        <div class="space-y-2">
+          <p class="text-sm text-gray-700">Figma</p>
+          <p class="text-sm text-gray-700">Canva</p>
+          <p class="text-sm text-gray-700">FigJam</p>
+          <p class="text-sm text-gray-700">Framer</p>
+          <p class="text-sm text-gray-700">Notion</p>
+        </div>
+      </div>
+
+      <!-- Development -->
+      <div class="space-y-4 fade-in-up delay-200">
+        <h3 class="text-lg font-semibold border-b border-gray-200 pb-3">Development</h3>
+        <div class="space-y-2">
+          <p class="text-sm text-gray-700">JavaScript/TypeScript</p>
+          <p class="text-sm text-gray-700">Swift</p>
+          <p class="text-sm text-gray-700">Python</p>
+          <p class="text-sm text-gray-700">Kotlin</p>
+          <p class="text-sm text-gray-700">Git</p>
+        </div>
+      </div>
+
+      <!-- Frameworks -->
+      <div class="space-y-4 fade-in-up delay-300">
+        <h3 class="text-lg font-semibold border-b border-gray-200 pb-3">Frameworks</h3>
+        <div class="space-y-2">
+          <p class="text-sm text-gray-700">Angular</p>
+          <p class="text-sm text-gray-700">React</p>
+          <p class="text-sm text-gray-700">Astro</p>
+          <p class="text-sm text-gray-700">Spring</p>
+          <p class="text-sm text-gray-700">WordPress</p>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="space-y-4 fade-in-up delay-400">
+        <h3 class="text-lg font-semibold border-b border-gray-200 pb-3">Languages</h3>
+        <div class="space-y-2">
+          <p class="text-sm text-gray-700">Spanish (Native)</p>
+          <p class="text-sm text-gray-700">English (Intermediate)</p>
+          <p class="text-sm text-gray-700">French (Basic)</p>
+          <p class="text-sm text-gray-700">German (Basic)</p>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <!-- Skills grid -->
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-    <!-- Programming Languages -->
-    <div class="brutalist-box" style="background: var(--red); color: var(--white); padding: 2rem;">
-      <h3 class="font-black uppercase text-xl mb-6 tracking-tight">LANGUAGES</h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="btn btn-black text-xs">SWIFT</span>
-        <span class="btn btn-black text-xs">JAVASCRIPT</span>
-        <span class="btn btn-black text-xs">TYPESCRIPT</span>
-        <span class="btn btn-black text-xs">PYTHON</span>
-        <span class="btn btn-black text-xs">KOTLIN</span>
-        <span class="btn btn-black text-xs">JAVA</span>
-      </div>
-    </div>
-
-    <!-- Frameworks -->
-    <div class="brutalist-box" style="background: var(--yellow); color: var(--black); padding: 2rem;">
-      <h3 class="font-black uppercase text-xl mb-6 tracking-tight">FRAMEWORKS</h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="btn btn-black text-xs">ANGULAR</span>
-        <span class="btn btn-black text-xs">REACT</span>
-        <span class="btn btn-black text-xs">ASTRO</span>
-        <span class="btn btn-black text-xs">SPRING</span>
-      </div>
-    </div>
-
-    <!-- Tools -->
-    <div class="brutalist-box" style="background: var(--blue); color: var(--white); padding: 2rem;">
-      <h3 class="font-black uppercase text-xl mb-6 tracking-tight">TOOLS</h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="btn btn-black text-xs">FIGMA</span>
-        <span class="btn btn-black text-xs">CANVA</span>
-        <span class="btn btn-black text-xs">FIGJAM</span>
-        <span class="btn btn-black text-xs">NOTION</span>
-        <span class="btn btn-black text-xs">GIT</span>
-        <span class="btn btn-black text-xs">FRAMER</span>
-        <span class="btn btn-black text-xs">WORDPRESS</span>
-      </div>
-    </div>
-
-    <!-- Languages -->
-    <div class="brutalist-box" style="background: var(--green); color: var(--black); padding: 2rem;">
-      <h3 class="font-black uppercase text-xl mb-6 tracking-tight">LANGUAGES</h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="btn btn-black text-xs">SPANISH (NATIVE)</span>
-        <span class="btn btn-black text-xs">ENGLISH (INTERMEDIATE)</span>
-        <span class="btn btn-black text-xs">FRENCH (BASIC)</span>
-        <span class="btn btn-black text-xs">GERMAN (BASIC)</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bottom statement block -->
-  <div class="brutalist-box mt-8" style="background: var(--black); color: var(--white); padding: 2rem;">
-    <p class="font-black uppercase text-center text-xl">
-      ALWAYS LEARNING • ALWAYS IMPROVING • ALWAYS DESIGNING
-    </p>
-  </div>
-</div>
-
-<style>
-.brutalist-skills {
-  /* Additional styling for skills section */
-}
-
-.brutalist-heading {
-  font-family: 'Arial Black', Arial, sans-serif;
-  font-size: 3rem;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .brutalist-heading {
-    font-size: 2rem;
-  }
-  
-  .grid {
-    grid-template-columns: 1fr;
-  }
-}
-</style>
+</section>

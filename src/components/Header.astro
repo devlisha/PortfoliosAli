@@ -1,42 +1,42 @@
 ---
-// Brutalist Header
+// Minimal Header
 ---
 
-<header class="fixed top-0 w-full z-50">
+<header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
   <div class="mx-auto max-w-7xl px-6">
-    <nav class="flex h-20 items-center justify-between bg-black border-b-4 border-black">
+    <nav class="flex h-20 items-center justify-between">
       <!-- Brand -->
-      <a href="#home" class="group inline-flex items-center gap-3 pl-4">
-        <span class="inline-flex h-10 w-10 items-center justify-center bg-red text-white border-2 border-white brutalist-text text-lg">AI</span>
-        <div>
-          <span class="block text-white brutalist-text text-sm leading-none">ALISHA IBARRA</span>
-          <span class="block text-red font-bold text-xs">UX/UI DESIGNER</span>
-        </div>
+      <a href="#home" class="group inline-flex items-center gap-3">
+        <span class="minimal-subheading">Alisha Ibarra</span>
       </a>
 
       <!-- Navigation -->
-      <div class="hidden md:flex items-center gap-0 pr-4">
-        <a href="#process" class="brutalist-box bg-yellow px-4 py-2 mr-2 font-bold hover:bg-white transition-colors">PROCESS</a>
-        <a href="#about" class="brutalist-box bg-blue text-white px-4 py-2 mr-2 font-bold hover:bg-green transition-colors">ABOUT</a>
-        <a href="mailto:ibarrabelloalisha@gmail.com" class="btn btn-primary">CONTACT</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#process" class="minimal-link text-sm font-medium text-gray-700 hover:text-black">Process</a>
+        <a href="#skills" class="minimal-link text-sm font-medium text-gray-700 hover:text-black">Skills</a>
+        <a href="#experience" class="minimal-link text-sm font-medium text-gray-700 hover:text-black">Experience</a>
+        <a href="#about" class="minimal-link text-sm font-medium text-gray-700 hover:text-black">About</a>
+        <a href="mailto:ibarrabelloalisha@gmail.com" class="minimal-btn minimal-btn-primary">Contact</a>
       </div>
 
       <!-- Mobile menu button -->
-      <div class="md:hidden pr-4">
-        <button id="menu-toggle" aria-label="Open menu" class="bg-red text-white p-2 border-2 border-white">
-          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+      <div class="md:hidden">
+        <button id="menu-toggle" aria-label="Open menu" class="p-2 text-gray-700 hover:text-black transition-colors">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
           </svg>
         </button>
       </div>
     </nav>
 
     <!-- Mobile menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-black border-4 border-black p-4">
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 py-4">
       <div class="space-y-3">
-        <a href="#process" class="block brutalist-box bg-yellow p-3 font-bold hover:bg-white">PROCESS</a>
-        <a href="#about" class="block brutalist-box bg-blue text-white p-3 font-bold hover:bg-green">ABOUT</a>
-        <a href="mailto:ibarrabelloalisha@gmail.com" class="block btn btn-primary text-center">CONTACT</a>
+        <a href="#process" class="block text-sm font-medium text-gray-700 hover:text-black py-2">Process</a>
+        <a href="#skills" class="block text-sm font-medium text-gray-700 hover:text-black py-2">Skills</a>
+        <a href="#experience" class="block text-sm font-medium text-gray-700 hover:text-black py-2">Experience</a>
+        <a href="#about" class="block text-sm font-medium text-gray-700 hover:text-black py-2">About</a>
+        <a href="mailto:ibarrabelloalisha@gmail.com" class="minimal-btn minimal-btn-primary w-full">Contact</a>
       </div>
     </div>
   </div>
